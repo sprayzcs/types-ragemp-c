@@ -406,6 +406,7 @@ interface PedBaseMp extends EntityMp {
 	clearWetness(): void;
 	clone(heading: number, networkHandle: boolean, pedHandle: boolean): Handle;
 	cloneToTarget(ped2: Handle): void;
+	createBlip(p1: number): void;
 	controlMountedWeapon(): boolean;
 	forceMotionState(motionStateHash: Hash, p2: boolean, p3: boolean, p4: boolean): boolean;
 	forceToOpenParachute(): void;
@@ -612,6 +613,7 @@ interface PedBaseMp extends EntityMp {
 	setAsGroupLeader(groupId: number): void;
 	setAsGroupMember(groupId: number): void;
 	setBlendFromParents(p1: any, p2: any, p3: number, p4: number): void;
+	setBlipColor(color: number): void;
 	setBlockingOfNonTemporaryEvents(toggle: boolean): void;
 	setBoundsOrientation(p1: number, p2: number, p3: number, p4: number, p5: number): void;
 	setCanArmIk(toggle: boolean): void;
