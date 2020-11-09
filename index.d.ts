@@ -937,6 +937,7 @@ interface PickupMp extends EntityMp {
 
 interface PlayerMp extends PedBaseMp {
 	armour: number;
+	blip: Handle;
 	eyeColour: number;
 	hairColour: number;
 	hairHighlightColour: number;
